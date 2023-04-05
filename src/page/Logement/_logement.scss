@@ -1,0 +1,152 @@
+@import'../../sass/utils/typographie';
+
+.container-flex {
+    margin: 10px auto;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1240px;
+
+    .container-text-display {
+        width: 100%;
+        height: auto;
+        display: flex;
+        height: auto;
+        padding: 20px;
+        justify-content: space-between;
+        flex-direction: row;
+
+        h2 {
+            font: {
+                size: 36px;
+                weight: 500;
+            }
+            color: $color-text;
+        }
+
+        .container-text-position {
+
+            span {
+                font: {
+                    size: 18px;
+                    weight: 500;
+                    family: $text;
+                }
+                padding: 10px;
+                margin-top: 10px;
+                color: $color-text;
+            }
+
+            .container-tag {
+                display: flex;
+                padding-top: 20px;
+                justify-content: space-between;
+                gap: 20px;
+                width: 100%;
+                
+            }
+        }
+
+        .container-seller {
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .seller{
+                display: flex
+            }
+
+            .color-p {
+                margin-top: 10px;
+                text-align: center;
+
+                font: {
+                    size: 18px;
+                    weight: 500;
+                    family: $text;
+                }
+
+                color: $color-text;
+                width: 93px;
+                height: 52px;
+            }
+
+            .img-seller {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .container-collapse {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        gap: 40px;
+        justify-content: center;
+    }
+}
+
+// 
+
+@media screen and (max-width:475px){
+    .layout{
+        width: 375px;
+
+    }
+    .container-flex{
+        width: 100%;
+        margin: 0 auto;
+        .container-text-display{
+            flex-direction: column;
+            h2{
+                padding-left: 10px;
+                font-size: 18px;
+            }
+            .container-text-position{
+
+                span{
+                    font-size: 14px;
+                }
+            }
+
+            .container-seller{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                .color-p{
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    justify-content: center;
+                    font: {
+                        size: 12px;
+                    }
+                }
+
+                .seller{
+                    align-items: center;
+                }
+
+                .img-seller{
+                    width: 100%;
+                    max-width: 32px;
+                    height: 32px;
+                    max-height: 32px;
+                }
+            }
+        }
+        .container-collapse{
+            width: 100%;
+            max-width: 355px;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+    }
+}

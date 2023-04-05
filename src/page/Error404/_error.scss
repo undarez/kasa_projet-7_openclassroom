@@ -1,0 +1,72 @@
+@import '../../sass/utils/_typographie';
+
+.container-error {
+    display: flex;
+    flex-direction: column;
+    height: 88vh;
+
+    .color-h1 {
+        display: flex;
+        color: $color-text;
+        font-size: 288px;
+        font-weight: 700;
+        font-family: $text;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .color-p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-text;
+        font-size: 36px;
+        font-weight: 500;
+        font-family: $text;
+
+        br {
+            display: none;
+        }
+    }
+
+    .color-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-text;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .container-error {
+
+        .color-h1 {
+            font: {
+                size: 98px;
+            }
+        }
+
+        .color-p {
+            br {
+                display: block;
+            }
+
+            text-align: center;
+
+            font: {
+                size: 18px;
+            }
+        }
+
+        .color-link {
+            font: {
+                size: 14px;
+            }
+
+            margin-top: 50px;
+        }
+    }
+}

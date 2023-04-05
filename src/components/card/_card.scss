@@ -1,0 +1,70 @@
+@import '../../sass/utils/_typographie.scss';
+
+.container-card {
+    width: 100%;
+    max-width: 1240px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items:  flex-end;
+    cursor: pointer;
+    
+    .overlay-banniere {
+        position: absolute;
+        width: 340px;
+        max-width: 340px;
+        height: 340px;
+        max-height: 340px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(56deg, rgba(0, 0, 0, 0.39539565826330536) 0%, rgba(0, 0, 0, 0.1516981792717087) 100%);
+        border-radius: 10px;
+    }
+    
+    .img-cover {
+        width: 100%;
+        max-width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .container-article {
+        position: absolute;
+        padding: 5px;
+        z-index: 1;
+
+        .position-title {
+            color: $color-text_white;
+            width: 300px;
+            height: 52px;
+
+            font: {
+                family: $text;
+                size: 18px;
+                weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and  (max-width:475px){
+    .container-card{
+        .overlay-banniere, .img-cover{
+            width: 100%;
+            max-width: 320px;
+            height: 255px;
+            max-height: 255px;
+        }
+        .container-article{
+            p{
+                width: 100%;
+               font: {
+                size: 12px;
+               } 
+            }
+        }
+        
+    }
+}

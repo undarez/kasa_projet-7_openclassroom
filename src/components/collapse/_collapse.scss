@@ -1,0 +1,73 @@
+@import '../../sass/utils/_typographie';
+
+.containerCollapse {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  .bgCollapse {
+    width: 100%;
+    height: auto;
+    background: $color-container-bg;
+    color: $color-text_white;
+    display: flex;
+    margin-bottom: 20px;
+
+    p {
+      padding: 20px;
+      font-family: $text;
+      color: $color-text;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+
+
+    summary {
+      width: 100%;
+      height: auto;
+      font-size: 24px;
+      font-weight: 500;
+      font-family: $text;
+      color: $color-text_white;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 5px;
+      background: $color-text;
+
+      svg {
+        fill: $color-text_white;
+        width: 20px;
+        height: auto;
+        transform: rotate(180deg);
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+
+
+@media(max-width:475px) {
+  
+  .containerCollapse {
+    max-width: 290px;
+
+    .bgCollapse {
+      summary {
+        align-items: center;
+
+        font: {
+          size: 13px;
+        }
+
+        svg {
+          width: 12px;
+        }
+      }
+    }
+  }
+
+}

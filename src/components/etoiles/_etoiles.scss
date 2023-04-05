@@ -1,0 +1,36 @@
+@import'../../sass/utils/_typographie';
+
+.container-etoiles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    list-style-type: none;
+
+    span img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rouge {
+        color: $color-text
+    }
+
+    .gris {
+        color: $etoilegris
+    }
+}
+
+@media screen and (max-width:475px) {
+    .container-etoiles {
+
+
+        span img {
+
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
