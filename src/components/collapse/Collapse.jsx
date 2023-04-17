@@ -20,7 +20,10 @@ const Collapse = ({ title, content }) => {
                                     }}
                               />
                         </summary>
-                        <p>{content}</p>
+                        {Array.isArray(content)
+                        ?<ul>{content.map(item => <li>{item}</li>)}</ul>
+                  :<p>{content}</p>}
+                        
                   </details>
             </div>
       );

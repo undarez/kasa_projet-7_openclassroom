@@ -28,3 +28,11 @@ const Etoiles = (props) => {
 };
 
 export default Etoiles;
+
+// // Ce code est un composant React nommé "Etoiles". Il affiche une notation en étoiles, où chaque étoile peut être pleine (rouge) ou vide (grise) en fonction de la note attribuée.
+
+// Le composant utilise useState pour stocker le nombre d'étoiles pleines, qui est initialisé avec la valeur de la propriété "rating" passée en paramètre. Il utilise également une liste de 5 éléments pour afficher les étoiles, avec chaque élément représentant une étoile.
+
+// La méthode map() est utilisée pour parcourir les éléments de la liste et afficher une étoile pleine ou vide en fonction de la note attribuée. Si l'index de l'élément est inférieur au nombre d'étoiles pleines, une étoile pleine est affichée, sinon une étoile vide est affichée.
+
+// Les images des étoiles sont stockées dans deux variables distinctes, "EtoilesRouge" et "EtoilesGris", qui sont importées depuis des fichiers externes.

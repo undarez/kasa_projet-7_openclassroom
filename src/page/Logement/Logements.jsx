@@ -75,12 +75,12 @@ const Logements = () => {
                               </div>
                               <div className="container-collapse">
                                     <Collapse
-                                          title={'Équipements'}
-                                          content={oneLogement.equipments}
-                                    />
-                                    <Collapse
                                           title={'Description'}
                                           content={oneLogement.description}
+                                    />
+                                    <Collapse
+                                          title={'Équipements'}
+                                          content={oneLogement.equipments}
                                     />
                               </div>
                         </div>
@@ -90,3 +90,11 @@ const Logements = () => {
 };
 
 export default Logements;
+
+// //note:  Ce code utilise la fonction useNavigate de la bibliothèque react-router-dom pour vérifier si l'ID de l'appartement est valide. Il utilise également la fonction useParams pour obtenir l'ID de l'appartement à partir de l'URL.
+
+// Ensuite, le code utilise le fichier JSON Logements.json pour trouver les informations sur l'appartement correspondant à l'ID et les afficher sur la page. Si l'appartement n'est pas trouvé dans le fichier JSON, le code redirige l'utilisateur vers une page d'erreur à l'aide de la fonction navigate de useNavigate.
+
+// La page d'appartement affiche des informations telles que le titre, la localisation, les équipements et la description de l'appartement. Il utilise également des composants personnalisés tels que Carousel, Tags, Etoiles et Collapse pour afficher les informations de manière esthétique et interactive.
+
+// Enfin, le code utilise la syntaxe JSX de React pour générer le contenu de la page.

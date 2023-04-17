@@ -56,3 +56,5 @@ const Carousel = (props) => {
 };
 
 export default Carousel;
+
+//  note : La fonction slideleft décrémente la variable currentIndex de 1 et si currentIndex atteint 0, elle la réinitialise à la dernière image dans le tableau props.src. La fonction slideright incrémente la variable currentIndex de 1 et si currentIndex atteint l'index de la dernière image dans le tableau props.src, elle la réinitialise à la première image.
