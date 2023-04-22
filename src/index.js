@@ -12,3 +12,4 @@ root.render(
 );
 
 
+//ReactDOM.createRoot() pour créer une racine pour le rendu React. Cette méthode permet de passer à React un élément DOM qui sera utilisé pour le rendu des composants React. Dans ce cas, l'élément est récupéré par la méthode document.getElementById('root') qui recherche un élément du DOM avec l'id "root". et root ce trouve dans le ficheir html

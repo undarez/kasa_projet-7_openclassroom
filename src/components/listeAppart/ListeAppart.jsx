@@ -27,4 +27,4 @@ export default ListeAppart;
 
 // note: Ce code source est un composant React appelé "ListeAppart" qui affiche une liste d'appartements à partir des données stockées dans un fichier JSON. Il importe un composant "Card" qui est utilisé pour afficher chaque appartement sous forme de carte.
 
-// La fonction "ListeAppart" mappe les données JSON en utilisant une boucle "map" et rend un composant "Card" pour chaque élément de données. Le composant "Card" reçoit des propriétés telles que "id", "title", "location" et "cover" qui sont utilisées pour afficher les détails de chaque appartement.
+// La fonction "ListeAppart" map les données JSON en utilisant une boucle "map" et rend un composant "Card" pour chaque élément de données. Le composant "Card" reçoit des propriétés telles que "id", "title", "location" et "cover" qui sont utilisées pour afficher les détails de chaque appartement.

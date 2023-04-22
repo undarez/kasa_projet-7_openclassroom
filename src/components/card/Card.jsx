@@ -15,3 +15,7 @@ const Card = ({ id, title, location, cover }) => {
       );
 };
 export default Card;
+
+//En résumé, ce composant Card est utilisé pour afficher une carte de logement avec une image de couverture, un titre et une localisation et permet de rediriger l'utilisateur vers la page du logement spécifique en cliquant sur la carte.
+
+// je fait appel au composant Link de react pour créer un lien vers le logement specifique

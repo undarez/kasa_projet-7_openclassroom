@@ -22,7 +22,7 @@ const Carousel = (props) => {
       };
       return (
             <div className="slider">
-                  {/*short circuit permet graéce à la condition d'éffacer les chevron ainsi que les chiffre des images si il ya q'une seule image  */}
+                  {/*short circuit permet grace à la condition d'éffacer les chevron ainsi que les chiffre des images si il ya q'une seule image  */}
                   {props.src.length > 1 && (
                         <>
                               {/* bouton droite */}
@@ -58,3 +58,5 @@ const Carousel = (props) => {
 export default Carousel;
 
 //  note : La fonction slideleft décrémente la variable currentIndex de 1 et si currentIndex atteint 0, elle la réinitialise à la dernière image dans le tableau props.src. La fonction slideright incrémente la variable currentIndex de 1 et si currentIndex atteint l'index de la dernière image dans le tableau props.src, elle la réinitialise à la première image.
+
+//Le composant utilise la logique de "short-circuit" pour ne pas afficher les flèches de navigation et les chiffres de la galerie si elle ne contient qu'une seule image.

@@ -29,5 +29,3 @@ const Collapse = ({ title, content }) => {
       );
 };
 export default Collapse;
-
-// export default collapse
